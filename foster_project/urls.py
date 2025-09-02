@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin-dashboard/', views.admin_dashboard, name='admin_dashboard'),
     path('accounts/', include('accounts.urls')),
     # path('medications/', include('medications.urls')),
-    # path('incidents/', include('incidents.urls')),
+    path('incidents/', include('incidents.urls')),
     # path('contacts/', include('contacts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # For login/logout
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
